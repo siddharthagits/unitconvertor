@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <img src="defocused-grass-blurred-background.jpg" alt="Math" width=100% height="900" loading="lazy">
+    <div class="container">
+      <h2>Unit Converter</h2>
+      <div class="main">
+        <div class="userInput">
+          <label>From:</label>
+          <select class="unitSelect" id="inputType" style="cursor: pointer">
+            <option value="meter" selected>Meter</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="inch">Inch</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="foot">Foot</option>
+          </select>
+          <label for="input">Input data:</label>
+          <input type="text" id="input" placeholder="Enter the value" required />
+        </div>
+        <div class="result">
+          <label>To:</label>
+          <select name="to" class="unitSelect" id="resultType" style="cursor: pointer">
+            <option value="meter">Meter</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="inch" selected>Inch</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="foot">Foot</option>
+          </select>
+          <label for="">Output data:</label>
+          <input type="text" id="result" placeholder="Result" style="cursor: no-drop;" disabled />
+        </div>
+      </div>
+      <button id="btn">Convert</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
